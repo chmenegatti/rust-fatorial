@@ -12,10 +12,11 @@ fn main() {
 
     let mut n = convert_to_int(&input);
 
-    while convert_to_int(&input) > 1 {
+    while n > 1 {
 
-        fatorial = fatorial * convert_to_int(&input);
+        fatorial = fatorial * n;
         n = n - 1;
-        
+
     }
+    println!("Fatorial de {} é: {}", input, fatorial);
 }
